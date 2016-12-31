@@ -19,10 +19,10 @@ class User < ApplicationRecord
 
  def join!(group)
      participated_groups << group
-   end
+ end
 
  def quit!(group)
      participated_groups.delete(group)
  end
- 
+
 end
